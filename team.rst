@@ -112,9 +112,17 @@ git push origin castle1
 
 
 Programmer B pushes his castle2 to the central repo
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git push origin castle2
+
+
+Programmer C pushes his castle3 to the central repo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git push origin castle3
+
+
 
 
 
