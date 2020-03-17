@@ -102,6 +102,19 @@ I have finished today's work
 I am happy.  Have a rest.  Castle1, see you tomorrow (git checkout castle1).
 
 
+Push many local branches to the central repo
+---------------------------------------------
+
+Programmer A pushes his castle1 to the central repo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git push origin castle1
+
+
+Programmer B pushes his castle2 to the central repo
+
+
+git push origin castle2
 
 
 
