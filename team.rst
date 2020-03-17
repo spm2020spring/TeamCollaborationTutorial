@@ -10,6 +10,8 @@ Centralized workflow
 ---------------------
 
 Everyone pushes his upates directly to the central repo.  One has to have write permission to be able to do this.
+With this approach, we do not need actions like Pull Request.
+Therefore, you should be a **responsible** individual who **always** test your code to make sure it does not break the program before you commit.
 
 
 Clone remote repo to local drive
@@ -36,7 +38,7 @@ Copy the whole castle to make castle1
 
 git checkout -b castle1
 
-**Now castle1 contains everything from the master branch.**
+**Now castle1 contains everything from the master branch.  This command should be executed only once.  Later, when you wish to switch to castle1, using the above command without -b.**
 
 
 Which branch I am in now?
@@ -44,7 +46,7 @@ Which branch I am in now?
 
 git branch
 
-**I am in castle1.**
+**I am now in castle1.**
 
 
 
@@ -53,13 +55,13 @@ Edit files, stage and commit
 
 **Edit files.**
 
-**Test my edit does not break the program!**
+**Test my edit does not break the program!  This test is really IMPORTANT to make the centralized workflow work.**
 
 git add .
 
 git commit -m "some thoughtful messages"
 
-**Everything happens inside castle1, the orignal castle won't be affected.  Now castle1 is ahead of the original castle.**
+**Everything happens inside castle1, the orignal castle won't be affected.  Now castle1 is ahead of the original castle, master.**
 
 
 Switch back to the master branch
@@ -73,7 +75,7 @@ Which branch I am in now?
 
 git branch
 
-**I am in the original castle, master.**
+**I am now in the original castle, master.**
 
 
 What has happened in the central repo
@@ -83,13 +85,21 @@ What has happened in the central repo
 
 git pull origin master
 
-**Now merge change I made in castle1 to master.**
+**Now merge the changes I have made in castle1 into master.**
 
 git merge castle1
 
-**Now push my changes to the central repo so my teammates can see them and incorporate them.**
+**Push my changes to the central repo so that my teammates can see and incorporate them.**
 
 git push origin master
+
+
+I have finished today's work
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I am happy.  Have a rest.  Castle1, see you tomorrow.
+
+
 
 
 
