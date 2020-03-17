@@ -22,12 +22,12 @@ git clone https://github.com/spm2020spring/TeamCollaborationTutorial.git
 **This should be done only once.**
 
 
-Go to the local project folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Go to my local project folder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 cd TeamCollaborationTutorial
 
-Which branch I am in now?
+Which branch am I in now?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git branch
@@ -41,7 +41,7 @@ git checkout -b castle1
 **Now castle1 contains everything from the master branch.  This command should be executed only once.  Later, when you wish to switch to castle1, using the above command without -b.**
 
 
-Which branch I am in now?
+Which branch am I in now?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git branch
@@ -63,6 +63,8 @@ git commit -m "some thoughtful messages"
 
 **Everything happens inside castle1, the orignal castle won't be affected.  Now castle1 is ahead of the original castle, master.**
 
+**You may spend most of your time in this step.**
+
 
 Switch back to the master branch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -70,7 +72,7 @@ Switch back to the master branch
 git checkout master
 
 
-Which branch I am in now?
+Which branch am I in now?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git branch
@@ -78,7 +80,7 @@ git branch
 **I am now in the original castle, master.**
 
 
-What has happened in the central repo
+What has happened in the central repo?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Someone else in my team might have updated the central repo while I was working hard inside castle1. Sync with that updates first.**
@@ -97,7 +99,7 @@ git push origin master
 I have finished today's work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I am happy.  Have a rest.  Castle1, see you tomorrow.
+I am happy.  Have a rest.  Castle1, see you tomorrow (git checkout castle1).
 
 
 
