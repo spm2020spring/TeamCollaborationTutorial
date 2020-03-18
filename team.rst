@@ -11,7 +11,7 @@ Centralized workflow
 
 Everyone pushes his upates directly to the central repo.  One has to have write permission to be able to do this.
 With this approach, we do not need actions like Pull Request.
-Therefore, you should be a **responsible** individual who **always** test your code to make sure it does not break the program before you commit.
+Therefore, you should be a **responsible** individual who **always** tests your code to make sure it does not break the program before you commit.
 
 
 Clone remote repo to local drive
@@ -99,7 +99,7 @@ git push origin master
 I have finished today's work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I am happy.  Have a rest.  Castle1, see you tomorrow (git checkout castle1).
+I am happy.  Have a good rest.  Castle1, see you tomorrow (git checkout castle1).
 
 
 
