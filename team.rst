@@ -59,7 +59,9 @@ Edit files, stage and commit
 
 git add .
 
-git commit -m "some thoughtful messages"
+git commit -e "specific messages (what & why)"
+
+**Append your group information in each commit message.  Why?  If your name and student number are not included, you won't get credit for that commit.**
 
 **Everything happens inside castle2, the original castle won't be affected.  Now castle2 is ahead of the original castle, master.**
 
@@ -95,7 +97,9 @@ What has happened in the central repo?
 
 git pull origin master
 
-**Push my changes to the central repo so that my teammates can see and incorporate them.**
+DON'T BREAK THE BUILD.  Double check that your code does not break the program before you send it to the central repo.
+
+**Everything seems good.  Push my changes to the central repo so that my teammates can see and incorporate them.**
 
 git push origin master
 
