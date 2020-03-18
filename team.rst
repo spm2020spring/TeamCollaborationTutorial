@@ -59,7 +59,9 @@ Edit files, stage and commit
 
 git add .
 
-git commit -m "some thoughtful messages"
+git commit -e "specific messages (what & why)"
+
+**Append your group information in each commit message.  Why?  If your name and student number are not included, you won't get credit for that commit.**
 
 **Everything happens inside castle2, the original castle won't be affected.  Now castle2 is ahead of the original castle, master.**
 
