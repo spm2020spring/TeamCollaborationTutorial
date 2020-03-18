@@ -6,10 +6,10 @@ The simplest way to collaborate among 5-10 members
 ==================================================
 
 
-Centralized workflow
----------------------
+The Centralized workflow
+-------------------------
 
-Everyone pushes his upates directly to the central repo.  One has to have write permission to be able to do this.
+Everyone pushes his updates directly to the central repo.  One has to have write permission to be able to do this.
 With this approach, we do not need actions like Pull Request.
 Therefore, you should be a **responsible** individual who **always** tests your code to make sure it does not break the program before you commit.
 
@@ -61,7 +61,7 @@ git add .
 
 git commit -m "some thoughtful messages"
 
-**Everything happens inside castle1, the orignal castle won't be affected.  Now castle1 is ahead of the original castle, master.**
+**Everything happens inside castle1, the original castle won't be affected.  Now castle1 is ahead of the original castle, master.**
 
 **You may spend most of your time in this step.**
 
@@ -80,16 +80,20 @@ git branch
 **I am now in the original castle, master.**
 
 
+Merge changes in castle1 to master
+-----------------------------------
+
+**Now merge the changes I have made in castle1 into master.**
+
+git merge castle1
+
+
 What has happened in the central repo?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 **Someone else in my team might have updated the central repo while I was working hard inside castle1. Sync with that updates first.**
 
 git pull origin master
-
-**Now merge the changes I have made in castle1 into master.**
-
-git merge castle1
 
 **Push my changes to the central repo so that my teammates can see and incorporate them.**
 
