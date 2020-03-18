@@ -95,7 +95,9 @@ What has happened in the central repo?
 
 git pull origin master
 
-**Push my changes to the central repo so that my teammates can see and incorporate them.**
+DON'T BREAK THE BUILD.  Double check that your code does not break the program before you send it to the central repo.
+
+**Everything seems good.  Push my changes to the central repo so that my teammates can see and incorporate them.**
 
 git push origin master
 
