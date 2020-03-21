@@ -110,69 +110,25 @@ I have finished today's work
 I am happy.  Have a good rest.  Castle2, see you tomorrow (git checkout castle2).
 
 
-The feature-branching workflow
--------------------------------
+Push many local branches to the central repo
+---------------------------------------------
 
-In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
-their feature branch to the central repo, and create a pull request for merging their featre into the master.
-
-Developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
-
-Clone remote repo to local drive
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git clone https://github.com/spm2020spring/TeamCollaborationTutorial.git
-
-This should be done only once.
-
-Go to my local project folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-cd TeamCollaborationTutorial
-
-Copy the whole castle to make chinese-castle for making changes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-git checkout -b chinese-castle
-
-Now chinese-castle contains everything from the master branch. 
-This command should be executed only once. 
-Later, when you wish to switch back to chinese-castle, using the above command without -b.
-
-
-Work on the branch chinese-castle
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Edit files, stage and commit.
-
-Edit files.  Test that my edit does not break the program.
-
-git add .
-
-git commit -e "specific messages (what & why)"
-
-Append your group information in each commit message. Why? If your name and student number are not included, you won't get credit for that commit.
-
-Everything happens inside chinese-castle.
-
-You may spend most of your time in this step.
-
-
-Update with the central repo's master branch
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-git pull origin master
-
-Now I am still in chinese-castle
-
-
-Push chinese-branch to the central repo
+Programmer A pushes his castle1 to the central repo
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git push origin chinese-castle
+git push origin castle1
 
 
-Initialize a Pull Request using the web interfact on Github.
+Programmer B pushes his castle2 to the central repo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Another developer could work on a german-castle and pushes his german-castle to the central repo in a similar way.
+git push origin castle2
 
+
+Programmer C pushes his castle3 to the central repo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+git push origin castle3
 
 
 
@@ -181,5 +137,5 @@ Another developer could work on a german-castle and pushes his german-castle to 
 -Hui
 
 
-Last modified on 22 March 2020
+Last modified on 18 March 2020
 
