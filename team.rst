@@ -6,12 +6,12 @@ The simplest way to collaborate among 5-10 members
 ==================================================
 
 
-Centralized workflow
----------------------
+The Centralized workflow
+-------------------------
 
-Everyone pushes his upates directly to the central repo.  One has to have write permission to be able to do this.
+Everyone pushes his updates directly to the central repo.  One has to have write permission to be able to do this.
 With this approach, we do not need actions like Pull Request.
-Therefore, you should be a **responsible** individual who **always** test your code to make sure it does not break the program before you commit.
+Therefore, you should be a **responsible** individual who **always** tests your code to make sure it does not break the program before you commit.
 
 
 Clone remote repo to local drive
@@ -33,12 +33,12 @@ Which branch am I in now?
 git branch
 
 
-Copy the whole castle to make castle1
+Copy the whole castle to make castle2
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git checkout -b castle1
+git checkout -b castle2
 
-**Now castle1 contains everything from the master branch.  This command should be executed only once.  Later, when you wish to switch to castle1, using the above command without -b.**
+**Now castle2 contains everything from the master branch.  This command should be executed only once.  Later, when you wish to switch to castle2, using the above command without -b.**
 
 
 Which branch am I in now?
@@ -46,7 +46,7 @@ Which branch am I in now?
 
 git branch
 
-**I am now in castle1.**
+**I am now in castle2.**
 
 
 
@@ -59,9 +59,11 @@ Edit files, stage and commit
 
 git add .
 
-git commit -m "some thoughtful messages"
+git commit -e "specific messages (what & why)"
 
-**Everything happens inside castle1, the orignal castle won't be affected.  Now castle1 is ahead of the original castle, master.**
+**Append your group information in each commit message.  Why?  If your name and student number are not included, you won't get credit for that commit.**
+
+**Everything happens inside castle2, the original castle won't be affected.  Now castle2 is ahead of the original castle, master.**
 
 **You may spend most of your time in this step.**
 
@@ -80,18 +82,24 @@ git branch
 **I am now in the original castle, master.**
 
 
+Merge changes in castle2 to master
+-----------------------------------
+
+**Now merge the changes I have made in castle2 into master.**
+
+git merge castle2
+
+
 What has happened in the central repo?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-**Someone else in my team might have updated the central repo while I was working hard inside castle1. Sync with that updates first.**
+**Someone else in my team might have updated the central repo while I was working hard inside castle2. Sync with that updates first.**
 
 git pull origin master
 
-**Now merge the changes I have made in castle1 into master.**
+DON'T BREAK THE BUILD.  Double check that your code does not break the program before you send it to the central repo.
 
-git merge castle1
-
-**Push my changes to the central repo so that my teammates can see and incorporate them.**
+**Everything seems good.  Push my changes to the central repo so that my teammates can see and incorporate them.**
 
 git push origin master
 
@@ -99,7 +107,7 @@ git push origin master
 I have finished today's work
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-I am happy.  Have a rest.  Castle1, see you tomorrow (git checkout castle1).
+I am happy.  Have a good rest.  Castle2, see you tomorrow (git checkout castle2).
 
 
 Push many local branches to the central repo
@@ -127,4 +135,7 @@ git push origin castle3
 
 
 -Hui
+
+
+Last modified on 18 March 2020
 
