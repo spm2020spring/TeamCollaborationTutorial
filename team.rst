@@ -112,6 +112,8 @@ I am happy.  Have a good rest.  Castle2, see you tomorrow (git checkout castle2)
 
 The feature-branching workflow
 -------------------------------
+<<<<<<< HEAD
+=======
 
 In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
 their feature branch to the central repo, and creates a Pull Request for merging their featre into the master. 
@@ -188,7 +190,13 @@ Initialize a Pull Request using the web interfact on Github.
 Another developer could work on a german-castle and pushes his german-castle to the central repo in a similar way.
 
 
+References
+----------------------
 
+Michael Ernst. (2017).  How to create and review a GitHub pull request?  https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html
+
+Kedar Vijay Kulkarni. (2019).  How to create a pull request in GitHub?  https://opensource.com/article/19/7/create-pull-request-github
+ 
 
 -Hui
 
