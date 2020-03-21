@@ -112,8 +112,6 @@ I am happy.  Have a good rest.  Castle2, see you tomorrow (git checkout castle2)
 
 The feature-branching workflow
 -------------------------------
-<<<<<<< HEAD
-=======
 
 In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
 their feature branch to the central repo, and creates a Pull Request for merging their featre into the master. 
