@@ -188,7 +188,13 @@ Initialize a Pull Request using the web interfact on Github.
 Another developer could work on a german-castle and pushes his german-castle to the central repo in a similar way.
 
 
+References
+----------------------
 
+Michael Ernst. (2017).  How to create and review a GitHub pull request?  https://homes.cs.washington.edu/~mernst/advice/github-pull-request.html
+
+Kedar Vijay Kulkarni. (2019).  How to create a pull request in GitHub?  https://opensource.com/article/19/7/create-pull-request-github
+ 
 
 -Hui
 
