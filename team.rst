@@ -114,9 +114,11 @@ The feature-branching workflow
 -------------------------------
 
 In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
-their feature branch to the central repo, and create a pull request for merging their featre into the master.
+their feature branch to the central repo, and creates a Pull Request for merging their featre into the master. 
 
-Developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
+Of course, the Pull Request will be subject to code review.
+
+In this way, developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
 
 Clone remote repo to local drive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,21 +130,25 @@ Go to my local project folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 cd TeamCollaborationTutorial
 
-Copy the whole castle to make chinese-castle for making changes
+Copy the whole castle to make chinese-castle 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git checkout -b chinese-castle
 
-Now chinese-castle contains everything from the master branch. 
+Now chinese-castle contains everything from the master branch.
 This command should be executed only once. 
 Later, when you wish to switch back to chinese-castle, using the above command without -b.
+
+Making a branch is a cheap operation.  
+We should do this for each small feature or bugfix.
+We can make a branch called chinese-castle-made-by-wood.  We can make a branch called chinese-castle-made-by-stone.
 
 
 Work on the branch chinese-castle
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Edit files, stage and commit.
+All of your changes related to this feature (or bugfix) must happen in chinese-castle.
 
-Edit files.  Test that my edit does not break the program.
+You edit files, and test that your editing does not break the program.
 
 git add .
 
@@ -155,12 +161,14 @@ Everything happens inside chinese-castle.
 You may spend most of your time in this step.
 
 
-Update with the central repo's master branch
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Update the branch chinese-castle with the central repo's master branch
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 git pull origin master
 
-Now I am still in chinese-castle
+Now I am still in chinese-castle.  I do this primarily to make sure I will be ahead of the central repo's master branch.
+
+If there are no conflicts (most cases), this command will finish silently.
 
 
 Push chinese-branch to the central repo
@@ -169,11 +177,15 @@ Push chinese-branch to the central repo
 git push origin chinese-castle
 
 
+Initialize a Pull Request
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I want other people see my changes and incorporate my changes (if they are satisfactory).
+
 Initialize a Pull Request using the web interfact on Github.
 
+
 Another developer could work on a german-castle and pushes his german-castle to the central repo in a similar way.
-
-
 
 
 
