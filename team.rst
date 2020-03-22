@@ -152,7 +152,7 @@ You edit files, and test that your editing does not break the program.
 
 git add .
 
-git commit -e "specific messages (what & why)"
+git commit -m "file changed: specific messages (what & why)"
 
 Append your group information in each commit message. Why? If your name and student number are not included, you won't get credit for that commit.
 
