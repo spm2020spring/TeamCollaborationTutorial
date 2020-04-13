@@ -166,11 +166,15 @@ You may spend most of your time in this step.
 Update the branch chinese-castle with the central repo's master branch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-git pull origin master
+`git pull origin master`
 
 Now I am still in chinese-castle.  I do this primarily to make sure I will be ahead of the central repo's master branch.
 
-If there are no conflicts (most cases), this command will finish silently.
+
+If there are no conflicts (in most cases), this command will finish silently.  Otherwise, you must resolve any conflicts before you push.
+A conflict occurs when a line you changed in your local branch has already been changed by other people since your last sync with the central master repo.
+
+IMPORTANT: You should execute before you push your commits to the remote central repo, to make sure your branch is "clean".
 
 
 Push chinese-branch to the central repo
