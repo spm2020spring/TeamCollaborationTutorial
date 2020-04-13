@@ -184,7 +184,7 @@ Initialize a Pull Request
 
 I want other people see my changes and incorporate my changes (if they are satisfactory).
 
-Initialize a Pull Request using the web interfact on Github.
+Initialize a Pull Request using the web interface on Github.
 
 
 Another developer could work on a german-castle and pushes his german-castle to the central repo in a similar way.
