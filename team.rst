@@ -114,11 +114,13 @@ The feature-branching workflow
 -------------------------------
 
 In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
-their feature branch to the central repo, and creates a Pull Request for merging their featre into the master. 
+their feature branch to the *central* repo, and creates a Pull Request for merging their featre into the master branch in the central repo. 
 
 Of course, the Pull Request will be subject to code review.
 
-In this way, developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
+In this way, while interacting with the central repo, developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
+
+Note: You should use this workflow in [this course](http://lanlab.org/course/2020s/spm/).
 
 Clone remote repo to local drive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
