@@ -120,7 +120,7 @@ Of course, the Pull Request will be subject to code review.
 
 In this way, while interacting with the central repo, developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
 
-Note: You should use this workflow in [this course](http://lanlab.org/course/2020s/spm/).
+Note: You should use this workflow in this course: http://lanlab.org/course/2020s/spm/.
 
 Clone remote repo to local drive
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -166,7 +166,7 @@ You may spend most of your time in this step.
 Update the branch chinese-castle with the central repo's master branch
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-`git pull origin master`
+git pull origin master
 
 Now I am still in chinese-castle.  I do this primarily to make sure I will be ahead of the central repo's master branch.
 
