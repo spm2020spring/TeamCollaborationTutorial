@@ -114,9 +114,9 @@ The feature-branching workflow
 -------------------------------
 
 In contrast to the centralized workflow in which every developer writes the central repo's master directly, the idea of the feature-branching workflow is that each developer pushes 
-their feature branch to the *central* repo, and creates a Pull Request for merging their featre into the master branch in the central repo. 
+their feature branch to the *central* repo, and creates a Pull Request for merging their feature into the master branch in the central repo. 
 
-Of course, the Pull Request will be subject to code review.
+Of course, the Pull Request will undergo code review.
 
 In this way, while interacting with the central repo, developers do not touch the central repo's master directly (even if they have write access), making master less vulnerable to bad pushes that may break the build.
 
@@ -174,7 +174,7 @@ Now I am still in chinese-castle.  I do this primarily to make sure I will be ah
 If there are no conflicts (in most cases), this command will finish silently.  Otherwise, you must resolve any conflicts before you push.
 A conflict occurs when a line you changed in your local branch has already been changed by other people since your last sync with the central master repo.
 
-IMPORTANT: You should execute before you push your commits to the remote central repo, to make sure your branch is "clean".
+IMPORTANT: You should execute the above command before you push your commits to the remote central repo, to make sure your branch is "clean".
 
 
 Push chinese-branch to the central repo
