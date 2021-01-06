@@ -25,6 +25,8 @@ git clone https://github.com/spm2020spring/TeamCollaborationTutorial.git
 Go to my local project folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+In the Git Bash, change directory to TeamCollaborationTutorial:
+
 cd TeamCollaborationTutorial
 
 Which branch am I in now?
