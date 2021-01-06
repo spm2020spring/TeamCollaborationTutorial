@@ -25,7 +25,7 @@ git clone https://github.com/spm2020spring/TeamCollaborationTutorial.git
 Go to my local project folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In the Git Bash, change directory to TeamCollaborationTutorial:
+(If you are working on Windows, then in the Git Bash, change directory to TeamCollaborationTutorial.)
 
 cd TeamCollaborationTutorial
 
@@ -132,6 +132,9 @@ This should be done only once.
 
 Go to my local project folder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+(If you are working on Windows, then in the Git Bash, change directory to TeamCollaborationTutorial.)
+
 cd TeamCollaborationTutorial
 
 Copy the whole castle to make chinese-castle 
